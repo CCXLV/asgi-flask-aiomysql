@@ -1,4 +1,5 @@
 flask[async]
 sqlalchemy
+aiomysql
 hypercorn
 python-dotenv

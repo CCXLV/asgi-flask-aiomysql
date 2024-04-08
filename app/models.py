@@ -13,14 +13,12 @@ class BaseModel(DeclarativeBase):
         
         await engine.dispose()
   
-
     async def save(self):
         async with async_session() as session:
             async with session.begin():
                 await session.commit()
 
-        await engine.dispose()
-            
+        await engine.dispose()   
 
     async def delete(self):
         async with async_session() as session:

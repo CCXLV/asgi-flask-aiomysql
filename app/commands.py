@@ -16,7 +16,6 @@ def init_db():
 
     click.echo('Database was created!')
 
-
 async def _init_db_async():
     async with engine.begin() as conn:
         await conn.run_sync(BaseModel.metadata.drop_all)
