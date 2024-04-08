@@ -15,5 +15,5 @@ flask init_db
 
 and finally run the app
 ```cmd
-hypercorn -b 127.0.0.1:5000 asgi:flask_app
+hypercorn -b 127.0.0.1:5000 asgi:asgi_app
 ```
