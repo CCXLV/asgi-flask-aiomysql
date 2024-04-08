@@ -1,0 +1,4 @@
+flask[async]
+sqlalchemy
+hypercorn
+python-dotenv
